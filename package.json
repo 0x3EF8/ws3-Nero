@@ -1,0 +1,14 @@
+{
+    "name": "ws3_Nero",
+    "version": "1.0.0",
+    "description": "A professional Facebook bot using ws3-fca",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "node src/index.js"
+    },
+    "dependencies": {
+        "fs-extra": "^10.0.0",
+        "npmlog": "^7.0.1",
+        "ws3-fca": "latest"
+    }
+}
