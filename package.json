@@ -1,14 +1,38 @@
 {
     "name": "ws3_Nero",
     "version": "1.0.0",
-    "description": "A professional Facebook bot using ws3-fca",
+    "description": "A simple Facebook bot using ws3-fca",
     "main": "src/index.js",
     "scripts": {
-        "start": "node src/index.js"
+      "start": "node src/index.js",
+      "update:packages": "ncu -u && npm install",
+      "dev": "nodemon src/index.js --watch src",
+      "format": "prettier --write \"src/**/*.{js,json}\"",
+      "format:check": "prettier --check \"src/**/*.{js,json}\""
     },
     "dependencies": {
-        "fs-extra": "^10.0.0",
-        "npmlog": "^7.0.1",
-        "ws3-fca": "latest"
-    }
-}
+      "fs-extra": "^11.3.0",
+      "npmlog": "^7.0.1",
+      "ws3-fca": "latest"
+    },
+    "devDependencies": {
+      "nodemon": "^3.1.9",
+      "prettier": "^3.5.1"
+    },
+    "engines": {
+        "node": ">=20.17.0",
+        "npm": ">=11.1.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/0x3EF8/ws3-Nero"
+    },
+    "keywords": [
+      "facebook",
+      "bot",
+      "ws3-fca"
+    ],
+    "author": "Jay Patrick Cano",
+    "license": "MIT"
+  }
+  
