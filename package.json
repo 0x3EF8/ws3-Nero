@@ -1,0 +1,51 @@
+{
+    "name": "ws3-nero",
+    "version": "1.0.0",
+    "description": "A lightweight and extensible Facebook bot built using ws3-fca.",
+    "main": "index.js",
+    "scripts": {
+      "start": "pm2 start ecosystem.config.js --only ws3-nero",
+      "restart": "pm2 restart ws3-nero",
+      "stop": "pm2 stop ws3-nero",
+      "delete": "pm2 delete ws3-nero",
+      "logs": "pm2 logs ws3-nero",
+      "list": "pm2 list",
+      "format": "prettier --write \"**/*.{js,json}\"",
+      "format:check": "prettier --check \"**/*.{js,json}\"",
+      "update:deps": "ncu -u && npm install"
+    },
+    "dependencies": {
+      "@google/generative-ai": "^0.22.0",
+      "dotenv": "^16.4.7",
+      "fs-extra": "^11.3.0",
+      "npmlog": "^7.0.1",
+      "ping": "^0.4.4",
+      "ws3-fca": "^1.0.47"
+    },
+    "devDependencies": {
+      "pm2": "^5.3.0",
+      "prettier": "^3.5.2"
+    },
+    "engines": {
+      "node": ">=20.17.0 <=22.11.0",
+      "npm": ">=10.9.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/0x3EF8/ws3-Nero.git"
+    },
+    "bugs": {
+      "url": "https://github.com/0x3EF8/ws3-Nero/issues"
+    },
+    "homepage": "https://github.com/0x3EF8/ws3-Nero#readme",
+    "keywords": [
+      "facebook-bot",
+      "messenger-bot",
+      "ws3-fca",
+      "automation",
+      "chatbot"
+    ],
+    "author": "Jay Patrick Cano",
+    "license": "MIT"
+  }
+  
